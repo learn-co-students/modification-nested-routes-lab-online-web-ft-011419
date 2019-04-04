@@ -7,6 +7,7 @@
   </head>
   <body>
     <% flash.each do |name, msg| -%>
+  # discover msg
       <%= content_tag :div, msg, class: name %>
     <% end -%>
     <%= yield %>
